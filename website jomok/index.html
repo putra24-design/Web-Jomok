@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+        nav {
+            background-color: antiquewhite;
+            padding: 15px;
+        }
+        nav a {
+            color:black;
+            text-decoration: none;
+            margin-right: 25px;
+            font-family: Arial;
+        }
+        nav a:hover {
+            color:bisques
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="halaman 1.html">Sejarah Awal Jomok</a>
+        <a href="halaman 2.html">Tokoh Jomok</a>
+        <a href="halaman 3.html">Wilayah Jomok</a>
+    </nav>
+     <div class="search">
+            <input id="searchInput" type="text" placeholder="Search...">
+            <button onclick="searchContent()">Search</button>
+            </div>
+    <script>
+        function searchContent() {
+            let keyword =document.getElementById("searchInput").value.toLowerCase();
+            let content = document.body.innerText.toLowerCase();
+            if (content.includes(keyword)) {
+                alert("Ditemukan: " + keyword);
+            } else {
+                alert("Tidak ditemukan");
+            }
+        }
+    </script>
+<img src="logo jomok" alt="" style="width: 1200px; height: 522px;">
+<h1>Web ini masih dalam pengembangan yaaa, mohon maaf jika merasa tidak nyaman</h1>
+<h2>jika mau kasih saran silahkan hubungi email ini: putrarizkiali24@gmail.com</h2>
+</body>
+</html>
